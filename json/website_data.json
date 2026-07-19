@@ -1,0 +1,37 @@
+{
+    "players": {},
+    "stats": {},
+    "config": {
+        "regions": [
+            "NA",
+            "EU",
+            "AS",
+            "AU"
+        ],
+        "tiers": [
+            "HT1",
+            "LT1",
+            "HT2",
+            "LT2",
+            "HT3",
+            "LT3",
+            "HT4",
+            "LT4",
+            "HT5",
+            "LT5"
+        ],
+        "rank_names": {
+            "LT5": "Low Tier 5",
+            "HT5": "High Tier 5",
+            "LT4": "Low Tier 4",
+            "HT4": "High Tier 4",
+            "LT3": "Low Tier 3",
+            "HT3": "High Tier 3",
+            "LT2": "Low Tier 2",
+            "HT2": "High Tier 2",
+            "LT1": "Low Tier 1",
+            "HT1": "High Tier 1",
+            "Unranked": "Unranked"
+        }
+    }
+}

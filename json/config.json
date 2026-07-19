@@ -1,0 +1,67 @@
+{
+    "channels": {
+        "request-test": "",
+        "waitlist-na": "",
+        "waitlist-eu": "",
+        "waitlist-as-au": "",
+        "results": "",
+        "queue-alert": "",
+        "test-logs": "",
+        "migrations": "",
+        "bot-logs": "",
+        "eval-transcript": "",
+        "high-transcript": "",
+        "high-results": "",
+        "tierlist-ht3": "",
+        "tierlist-lt2": "",
+        "tierlist-ht2": "",
+        "tierlist-lt1": "",
+        "punishments": ""
+    },
+    "categories": {
+        "na-evaluation-tests": "",
+        "eu-evaluation-tests": "",
+        "as-evaluation-tests": "",
+        "au-evaluation-tests": "",
+        "high-tickets": "",
+        "high-test-lt2": "",
+        "high-test-ht2": "",
+        "high-test-lt1": "",
+        "high-test-ht1": "",
+        "passed-eval": ""
+    },
+    "roles": {
+        "restricted": "",
+        "staff": "",
+        "tester": "",
+        "waitlist-na": "",
+        "waitlist-eu": "",
+        "waitlist-as-au": "",
+        "high_staff": "",
+        "restriction_key": "",
+        "migration_key": ""
+    },
+    "quota": 10,
+    "tier_roles": {
+        "LT5": "",
+        "HT5": "",
+        "LT4": "",
+        "HT4": "",
+        "LT3": "",
+        "HT3": "",
+        "LT2": "",
+        "HT2": "",
+        "LT1": "",
+        "HT1": ""
+    },
+    "messages": {
+        "tierlist-ht3-message": "",
+        "tierlist-lt2-message": "",
+        "tierlist-ht2-message": "",
+        "tierlist-lt1-message": ""
+    },
+    "whitelist": [
+        "",
+        ""
+    ]
+}
