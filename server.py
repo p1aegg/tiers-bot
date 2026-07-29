@@ -1,5 +1,5 @@
 """
-Omni Tiers server with local JSON file storage.
+Name Tiers server with local JSON file storage.
 
 Usage:
   pip install flask
@@ -13,8 +13,8 @@ Uses local JSON files for all data:
   - stats.json (statistics - legacy)
 
 Endpoints:
-  GET /                 -> serves omni-tiers.html
-  GET /vanilla, /uhc... -> ALSO serves omni-tiers.html (SPA fallback)
+  GET /                 -> serves index.html
+  GET /vanilla, /uhc... -> ALSO serves index.html (SPA fallback)
   GET /website_data.json -> serves consolidated website data (RECOMMENDED)
   GET /data/website_data.json -> same endpoint (compatibility alias)
   GET /users.json       -> serves users.json (legacy)
@@ -50,7 +50,7 @@ from flask import Flask, send_from_directory, jsonify, abort
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ALLOWED_JSON = {"users.json", "tiers.json", "stats.json", "website_data.json"}
-HTML_FILE = "omni-tiers.html"
+HTML_FILE = "index.html"
 
 # Valid SPA routes the front-end script understands.
 VALID_MODES = {"vanilla", "uhc", "pot", "nethop", "smp", "sword", "axe", "mace"}
