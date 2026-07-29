@@ -1,4 +1,4 @@
-# Omni Tiers Bot
+# Tiers Bot
 
 A Discord bot for managing Minecraft PvP tier testing, evaluation tickets, waitlists, and rankings. Includes a Flask web server to display tier data.
 
@@ -6,7 +6,7 @@ A Discord bot for managing Minecraft PvP tier testing, evaluation tickets, waitl
 
 - `main.py` — Discord bot (discord.py) with slash commands for tier management
 - `server.py` — Flask web server serving the tier rankings frontend
-- `omni-tiers.html` — Frontend HTML for displaying player rankings
+- `index.html` — Frontend HTML for displaying player rankings
 - `requirements.txt` — Python dependencies
 - `json/` — Directory containing all data files (config, users, tiers, etc.)
 
@@ -135,7 +135,7 @@ Then open `http://localhost:8000` in your browser.
 
 | Endpoint | Description |
 |----------|-------------|
-| `GET /` | Serves the `omni-tiers.html` frontend |
+| `GET /` | Serves the `index.html` frontend |
 | `GET /vanilla`, `/uhc`, `/pot`, `/nethop`, `/smp`, `/sword`, `/axe`, `/mace` | SPA routes — same HTML, frontend handles routing |
 | `GET /website_data.json` | Consolidated player/rank data for the frontend **(primary endpoint)** |
 | `GET /users.json` | Legacy user data |
@@ -149,7 +149,7 @@ The server reads data from local JSON files. `main.py` generates `json/website_d
 
 1. `main.py` creates/updates JSON files under `json/` directory
 2. `server.py` reads those local JSON files and serves them over HTTP
-3. `omni-tiers.html` fetches `/website_data.json` and renders player rankings
+3. `index.html` fetches `/website_data.json` and renders player rankings
 
 ---
 
