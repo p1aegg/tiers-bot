@@ -1262,7 +1262,7 @@ async def generate_tierlist_embed(tier: str, guild: discord.Guild, bot: commands
     divider = "~~──────────────────────────────────────────~~"
 
     desc = (
-        f"# {emoji} | __Omni Tiers__ — {tier_display} LIST\n"
+        f"# {emoji} | __Name Tiers__ — {tier_display} LIST\n"
         f"These players are voluntary members who can be assigned to high testing tickets!\n\n"
         f"{divider}\n"
     )
@@ -1567,7 +1567,7 @@ class VerificationModal(discord.ui.Modal, title="Verify Account"):
         embed.add_field(name="Linked Username", value=username)
         embed.add_field(name="UUID", value=uuid)
         embed.set_thumbnail(url=get_skin_url(uuid))
-        embed.set_footer(text=f"Omni Tiers • Today at {datetime.datetime.now().strftime('%I:%M %p')}")
+        embed.set_footer(text=f"Name Tiers • Today at {datetime.datetime.now().strftime('%I:%M %p')}")
 
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
