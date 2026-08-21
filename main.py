@@ -3905,7 +3905,7 @@ if __name__ == "__main__":
             print("Available arguments: -embed (send static embeds on startup)")
     
     try:
-        bot.run('BOT_TOKEN')
+        bot.run(os.getenv("BOT_TOKEN"))
     except KeyboardInterrupt:
         print("Bot interrupted by user")
     finally:
